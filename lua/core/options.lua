@@ -1,5 +1,5 @@
 local opt = vim.opt
-local cache_dir = vim.env.HOME .. '/.cache/nvim/'
+local cache_dir = vim.fn.stdpath('cache')
 
 opt.termguicolors = true
 opt.hidden = true
@@ -8,11 +8,11 @@ opt.virtualedit = 'block'
 opt.clipboard = 'unnamedplus'
 opt.wildignorecase = true
 opt.swapfile = false
-opt.directory = cache_dir .. 'swap/'
-opt.undodir = cache_dir .. 'undo/'
-opt.backupdir = cache_dir .. 'backup/'
-opt.viewdir = cache_dir .. 'view/'
-opt.spellfile = cache_dir .. 'spell/en.uft-8.add'
+opt.directory = cache_dir .. '/swap/'
+opt.undodir = cache_dir .. '/undo/'
+opt.backupdir = cache_dir .. '/backup/'
+opt.viewdir = cache_dir .. '/view/'
+opt.spellfile = cache_dir .. '/spell/en.uft-8.add'
 opt.history = 2000
 opt.timeout = true
 opt.ttimeout = true
